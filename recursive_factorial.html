@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        // Memoization
+
+        var cache = {
+            5: 120
+        };
+
+        function factorial(x) {
+
+            if (x in cache) {
+                console.log('In cache... I can relax ...' + x);
+                return cache[x];
+            }
+            else {
+                console.log('ugh! grunt work again ... ' + x);
+                cache[x] = x < 2 ? 1 : x * factorial(x - 1);
+                return cache[x];
+            }
+
+        }
+
+
+
+        console.log(factorial(10));
+        console.log(factorial(11));
+
+        cache = null;
+
+        console.log(cache);
+
+        function factorial_cached(x) {
+            return x * factorial(x - 1);
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

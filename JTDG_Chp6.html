@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        var obj = {};
+
+        console.log(obj.toString());
+        console.log(Object.prototype.toString.call(obj));
+
+        var arr = [1,2,3,4];
+
+        var date = new Date();
+        console.log(arr.toString());
+        console.log(Array.prototype.toString.call(arr));
+        console.log(Object.prototype.toString.call(arr));
+
+        var squared = [];
+        arr.forEach(function (elem){
+            squared.push(elem * elem);
+        });
+
+        console.log(squared);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

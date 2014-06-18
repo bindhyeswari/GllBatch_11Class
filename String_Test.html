@@ -7,20 +7,27 @@
 
         // Group all anagrams and print them
         // use for loops and charCodeAt
-        var str = 'option; proton; dearer; reader; reread; decree; filler; joiner; layers; learnt; opener; packer; diaper; secure; seller; rinses; sirens; sister; sniper; luring; citrus; desalt; lasted; sacred; escort; denser; mashes; ripens; plains; petals; plates; pleats; tasted; stakes; trains; subtle; sublet; insult; battle; racket; states; nights; sought; strain; trails'
+        var str = 'option; proton; dearer; reader; reread; decree; filler; joiner; layers; learnt; opener; packer; diaper; secure; seller; rinses; sirens; sister; sniper; luring; citrus; desalt; lasted; sacred; escort; denser; mashes; ripens; plains; petals; plates; pleats; tasted; stakes; trains; subtle; sublet; insult; battle; racket; states; nights; sought; strain; trails';
 
         // Get number of times 4 occurs in the following number
+        // refer http://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149
         var num = '23454567409046483653789947474333444';
+        console.log(num.match(/[4]/g).length);
 
         // Following is a sorted array
         // Write code to calculate the number of times 4 occurs
         var arr = [1,1,2,3,4,4,4,5,6,7,7,7,8,8,9,9,9,10];
+        console.log(arr.lastIndexOf(4) - arr.indexOf(4) + 1);
+        // for --> binary search
 
         // Replace all numbers in the following string to x
         var rep = 'Jacob has a passcode of 2435 and Hamid had a passcode of 4565';
 
         // Get the first letter of all the following lines: (\n is a new line character)
         var lines = 'Line 1\nLine 2\nThis will show\nup in \nmultiple lines\non console.';
+        console.log(lines.match(/^./mg));
+
+        console.log("Jacob".match(/^[a-z0-9_-]{3,16}$/i));
 
 
 

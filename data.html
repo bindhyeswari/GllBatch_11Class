@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            padding: 3em;
+            font: 300 1em 'Helvetica Neue';
+        }
+        div.city_container {
+            max-width: 500px;
+            padding: 1em;
+            margin: 0 auto;
+            box-shadow: 0 0 2px #aaa;
+        }
+        div.city_name {
+            font-size: 1.5em;
+        }
+        div.time, div.weather_summary {
+            font: 300 1em 'Helvetica Neue';
+            color: #888;
+        }
+        div.left, div.right {
+            display: inline-block;
+            min-width: 300px;
+            margin: 0.5em;
+        }
+        div.right {
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="city_container">
+        <div>
+            <div class="city_name">San Jose</div>
+            <div class="time">Wednesday 12:00 PM</div>
+            <div class="weather_summary">Partly Cloudy</div>
+        </div>
+        <div>
+            <div class="temperature_container">
+                <div class="left">
+                    <img class="weather_icon" src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly_cloudy"/>
+                </div>
+                <div class="right">
+                    <div>Precipitation: 0%</div>
+                    <div>Humidity: 29%</div>
+                    <div>Wind: 11mph</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
